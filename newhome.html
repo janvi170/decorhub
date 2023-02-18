@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorhub</title>
+    <style>
+       .rep{
+            display: flex;
+        }
+        .rep > img:nth-child(1){
+           width:15%;
+           height:70px;
+           
+        }
+        .rep > div > input{
+            border:none;
+    width:300px;
+    align-items: center;
+    background-color: rgb(214, 209, 209);
+}
+  #e button{
+    border:none;
+    background-color: rgb(214, 209, 209);
+    margin-right: 5px;
+  }
+  #e img{
+    width:20px;
+    height: 20px;
+    background-color: rgb(214, 209, 209);
+
+  }
+  #e{
+    display: flex;
+    width:450px;
+    height:40px;
+    background-color: rgb(214, 209, 209);
+    margin-left: 70px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #e > h5{
+    margin-top: 12px;
+  margin-right: 20px;
+  margin-left: 10px;
+  }
+  #r{
+    display: flex;
+    margin-left:30px;
+  }
+  #r >a>button{
+    width:100px;
+    height:40px;
+    background-color: white;
+    border: none;
+    
+
+  }
+  #r >img{
+    width:20px;
+    height:25px;
+    background-color: white;
+    margin-top: 7px;
+
+  }
+  #r>a>button>h4{
+    margin-top: 16px;
+  }
+  #q{
+    display: flex;
+    margin-left: 200px;
+  }
+  .pi >button{
+    width:120px;
+    height:40px;
+    background-color: white;
+text-align: left;
+border: none;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+
+  }
+  
+  #q >img{
+    width:25px;
+    height:25px;
+    background-color: white;
+    margin-top: 7px;
+    
+
+  }
+  #j{
+    display: flex;
+    background-color: white;
+  }
+  #j>button{
+    width:150px;
+    height:40px;
+    background-color: white;
+    border: none;
+text-align: left;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 17px;
+    
+
+  }
+  #j>img{
+    width:35px;
+    height:25px;
+    background-color: white;
+    margin-top: 7px;
+
+  }
+  #v{
+    display: flex;
+    background-color: white;
+  }
+  #v>button{
+    width:150px;
+    height:40px;
+    background-color: white;
+    border: none;
+text-align: left;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 17px;
+    
+
+  }
+  #v>img{
+    width:35px;
+    height:25px;
+    background-color: white;
+    margin-top: 7px;
+
+  }
+  .we{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height:55px;
+    background-color:#951818;
+    color: white;
+  }
+  .we > h3:nth-child(1){
+    margin-left: 600px;
+  }
+   p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+  }
+  p::before{
+    content: "";
+    height: 1px;
+    width: 50vw;
+    background-color: rgb(179, 176, 176);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+  }
+  p::after{
+    content: "";
+    height: 1px;
+    width: 50vw;
+    background-color: rgb(179, 176, 176);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+  }
+  span{
+    background-color: white;
+    padding: 0 30px;
+  }
+  .box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+  .box > div >img{
+    width:94%;
+  }
+  .wie > img{
+    width: 230px;
+    margin-top: 10px;
+    height:142px;
+    border-radius: 10px;
+  }
+  .kii > img{
+    width:230px;
+    height:142px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .ui{
+    display: grid;
+    background-color: black;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    height: 100px;
+    margin-top: 5px;
+    padding-top: 10px;
+  }
+  .ui > div{
+    width: 100%;
+    height:90px;
+    
+  }
+  .ui>div>img{
+    width: 100%;
+    height: 90px;
+  }
+  .cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    
+  }
+  .cont > div{
+    width:90%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .cont > div > img{
+    width: 100%;
+  }
+  .jam{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: #951818;
+  
+  }
+  .jam >div{
+    width: 90%;
+    text-align: left;
+    margin-left: 100px;
+    background-color: #951818;
+    color: white;
+  }
+  .rem > div{
+    width: 100%;
+    height: 450px;
+    background: url('https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png');
+    animation: slide 10s infinite;
+  }
+  @keyframes slide{
+    0%{background: url('https://cdn.plotch.io/image/upload/C/V/1671110155_NC5wbmc=.png');
+
+    }
+    35%{background: url('https://cdn.plotch.io/image/upload/C/V/1671110161_Mi5wbmc=.png');
+
+    }
+    75%{background: url('https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png');
+
+    }
+  }
+  
+ 
+
+
+
+
+
+ 
+
+
+  
+    </style>
+  
+</head>
+<body>
+    <div class="rep">
+      <img src="img.png" alt="error">
+      <div id="e">
+      <h5>SEARCH</h5>
+      <input type="text" placeholder="You are searching for new delhi" name="q">
+  <button type="submit"><img src="https://webstockreview.net/images/google-search-png-10.png"></button>
+  </div>
+  <div id="r">
+    <img src="https://www.pngitem.com/pimgs/m/148-1489641_logo-location-transparent-png-white-transparent-location-logo.png" alt="">
+  <a href="location.html"><button><h4>location</h4></button></a>
+</div>
+<div id="q">
+   
+    <img src="https://clipground.com/images/user-login-icon-png-1.png" alt="error">
+    <a href="signin.html" class="pi">
+    <button>Sign In/Register</button></a>
+
+</div>
+<div id="j">
+    <img src="https://flyclipart.com/thumb2/like-wedding-wishlist-icon-free-download-png-vector-855991.png" alt="error">
+    <button>Wishlist</button>
+</div>  
+<div id="v">
+    <img src="https://cdn4.iconfinder.com/data/icons/game-general-icon-set-1/512/cart-512.png" alt="">
+    <button><a href="cart.html">Cart</a></button>
+</div> 
+</div>
+<div class="we">
+    <h3>HOME DECOR</h3>
+    <h3>PRODUCTS NEAR ME</h3>
+    </div>
+    <p><span>Shop By Category</span></p>
+    <div class="box">
+        <div>
+           <a class="wie" href="site.html"><img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2016/07/buy-electronics.jpg" alt=""></a>
+        </div>
+        <div>
+           <a class="kii" href="bags.html"> <img src="https://cf.shopee.ph/file/64fddf9847cd8b3de682897f67a6de32" alt=""></a>
+        </div>
+        <div>
+            <img src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" alt="">
+        </div>
+        <div>
+            <img src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" alt="">
+        </div>
+        <div>
+            <img src="https://cdn.plotch.io/image/upload/C/V/1671110006_Ni5wbmc=.png" alt="">
+        </div>
+    </div>
+         <div class="rem">
+          <div>
+          
+         </div>
+    </div>
+    
+         <div class="ui">
+          <div>
+            <img src="image1.png" alt="">
+          </div>
+          <div>
+            <img src="image2.png" alt="">
+          </div>
+          <div>
+            <img src="image3.png" alt="">
+          </div>
+          <div>
+            <img src="image4.png" alt="">
+          </div>
+          <div>
+            <img src="image5.png" alt="">
+          </div>
+        </div>
+        <div  class="cont">
+          <div>
+          <img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" alt="">
+          </div>
+          <div>
+          <img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" alt="">
+          </div>
+          <div>
+          <img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" alt="">
+          </div>
+          <div>
+          <img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" alt="">
+          </div>
+        </div>
+        <div class="jam">
+          <div>
+            <h4>About Us</h4>
+            <h4>India's most convenient online grocery channel Buyerapp Fresh and Smart makes your grocery shopping even simpler. No more hassles of sweating it out in crowded markets, grocery shops & supermarkets - now shop from the comfort of your home; office, or on the move. We offer you the convenience of shopping for everything that you need for your home - be it fresh fruits & vegetables, rice, dals, oil, packaged food, dairy item, frozen, pet food, household cleaning items & personal care products from a single virtual store.</h4>
+            <h4>PAYMENT OPTIONS</h4>
+          </div>
+          <div>
+            <h4>OUR COMPANY    </h4>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+          </div>
+          <div>
+            <h4>TOP CATEGORIES</h4>
+            <h5>Grocery</h5>
+          </div>
+          <div>
+            <h4>POLICIES & INFO</h4>
+            <h5>Privacy Policy</h5>
+            <h5>Terms & Condition</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Return & Refund
+            </h5>
+            <h4>SUPPORT</h4>
+            <h4>For Help, send an email to customercare@decorhub.com</h4>
+              </div>
+        </div>
+</body>
+<script>
+ 
+
+</script>
+</html>

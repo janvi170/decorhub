@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url('https://wallpapercave.com/wp/M86GmpR.jpg');
+      background-size: cover;
+    }
+    .gif{
+      width: 400px;
+      padding: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: rgba(0,0,0,0.4);
+text-align: center;
+    }
+    .gif h1{
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .gif input[type="text"],.gif input[type="password"]
+    {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 3px solid blue;
+      padding: 14px 35px;
+      width: 220px;
+      outline: none;
+      color: white;
+      border-radius: 20px;
+      transition: 0.25px;
+
+    }
+    .gif input[type="text"]:focus,.gif input[type="password"]:focus{
+      width: 270px;
+      border-color: rgb(121, 97, 4);
+    }
+    .gif input[type="submit"]{
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 3px solid blue;
+      padding: 14px 35px;
+      width: 220px;
+      outline: none;
+      color: white;
+      border-radius: 20px;
+      transition: 0.25px;
+      cursor: pointer;
+    }
+    .gif input[type="submit"]:hover{
+      background: rgb(121, 97, 4);
+    }
+  </style>
+</head>
+<body>
+  <a href="decorhub.html">Home</a>
+  <form class="gif" action="">
+    <h1>Login</h1>
+    <input type="text" name="" placeholder="Enter username" id="username">
+    <input type="password" name="" placeholder="Enter password" id="password">
+    <input type="submit" name="" value="Login" class="btn" onclick="valid()">
+  </form>
+</body>
+<script>
+function valid(){
+  var un = document.getElementById("username").value;
+  var pass = document.getElementById("password").value;
+  if(un==="janvis1234" && pass==="123456"){
+   
+    alert("login successful");
+    window.open('home.html')
+  }else if(un==="admin12" && pass==="1218"){
+   alert("Welcome Admin")
+   window.open('admin.html')
+  }else{
+    alert("Invalid Information")
+    return;
+  }
+
+}
+</script>
+</html>
+  
+   

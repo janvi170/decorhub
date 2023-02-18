@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place order</title>
+    <style>
+        body{
+            background-image: url('https://wallpapercave.com/wp/wp2947188.jpg');
+            background: cover;
+        }
+        .ty{
+            border: 1px solid black;
+            width:400px;
+            height:450px;
+            margin: auto;
+            background-image: url('https://i.pinimg.com/736x/78/9d/10/789d108ae0ba9a93266170031c109189--brick-wallpaper-grey-wallpaper.jpg');
+            border-radius: 20px;
+            margin-top: 70px;
+        }
+        .ty >h2{
+            text-align: center;
+            
+        }
+        .ty h4{
+            margin-left: 20px;
+            
+        }
+        #but{
+            margin-left: 20px;
+         
+        }
+        #butm{
+            margin-left: 20px;
+         
+        }
+        #butl{
+            margin-left: 20px;
+         
+        }
+        .btn{
+            margin-top: 50px;
+            padding:10px 30px;
+            margin-left: 120px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(67, 67, 219);
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ty">
+        <h2>Delivery Details</h2>
+        <h4>Address</h4>
+        <input type="text" placeholder="Your address" id="but">
+        <h4>Phone Number</h4>
+        <input type="number" id="butm" placeholder="number">
+        <br>
+        <h4>Payment method</h4>
+        <input type="radio" id="butl"/>Cash On delivery
+        <br>
+        <input type="radio" id="butl"/>Pay with debit card or paytm cards
+        <br>
+        <input type="radio" id="butl">
+        <select id="bank">
+            <option type="Net banking">Net Banking</option>
+            <option type="">HDFC Bank</option>
+            <option type="">ICICI Bank</option>
+            <option type="">Allahabad Bank</option>
+            <option type="">Kotak Bank</option>
+            <option type="">State bank of india</option>
+        </select>
+        <br>
+        <input type="submit" name="" value="Submit Details" class="btn" onclick="valid()">
+    </div>
+    
+</body>
+<script>
+    function valid(){
+  var Address = document.getElementById("but").value;
+  var phonenum = document.getElementById("butm").value;
+  var pm = document.getElementById("butl").value;
+
+  if(Address==="123/w xyz,delhi" && phonenum===1234567890 && pm==="Cash On delivery"){
+   alert("Your Oder Has Been Placed")
+  }else{
+   alert("Your Order Has Been Placed")
+   window.open('home.html')
+  }
+
+}
+</script>
+</html>
